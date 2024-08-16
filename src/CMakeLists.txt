@@ -9,3 +9,8 @@ target_include_directories(project-cpp
 target_sources(project-cpp PRIVATE
   main.cpp
 )
+
+# Link library dependencies
+target_link_libraries(project-cpp PRIVATE
+  compiler_flags
+)
